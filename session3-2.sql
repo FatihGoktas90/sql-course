@@ -132,3 +132,7 @@ SQLİTE sadece INNER , LEFT VE CROSS JOİN  işlemlerinş destekler.
 olan kayıtların marka_id,marka_adi , sipariş adedi ve siparis_tarhi bilgilerinş listeleyen bir 
 sorgu yazınız. */
 
+SELECT markalar.marka_id,markalar.marka_adi,siparisler.siparis_adedi,siparisler.siparis_tarihi
+FROM markalar
+LEFT JOIN siparisler 
+ON markalar.marka_id=siparisler.marka_id;
